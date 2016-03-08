@@ -1,0 +1,48 @@
+/** This is a Skeleton of the Main Class that tests the Class Skeletons of
+ * Class ContactList and Class Person.
+ * @author micaelakowalczyk
+ * Edited by BK.
+ */
+package contact_list;
+import java.util.*;
+public class QualitySoft {
+	public static void main(String[] args) {
+		Scanner scanner;
+		scanner = new Scanner(System.in);
+		Person onePerson;
+		onePerson = new Person();
+		onePerson.setFirstName(null) ;
+		onePerson.setLastName(null); 
+		onePerson.setAddress(null);
+		onePerson.setEmail(null);
+		onePerson.setPhoneNumber(null);
+	 	onePerson.setNotes(null);
+	 	System.out.println(onePerson.getFirstName() + onePerson.getLastName() + 
+	 					   onePerson.getAddress() + onePerson.getEmail() + 
+	 					   onePerson.getPhoneNumber() + onePerson.getNotes());
+	 	onePerson.compareTo(null);
+	 	System.out.println(onePerson.toString());
+	 		
+		ContactList listOne;
+		listOne = new ContactList();
+		listOne.setNewContact();
+		listOne.sortContacts();
+		listOne.searchContacts();
+		System.out.println(listOne.toString());
+		
+		scanner.close();
+		
+		System.out.println("The Class Skeleton has compiled successfully!");	
+	}
+}
+/*RUN
+nullnullnullnullnullnull
+null
+null
+null
+null
+null
+null
+[null, null, null, null, null]
+The Class Skeleton has compiled successfully!
+*/
