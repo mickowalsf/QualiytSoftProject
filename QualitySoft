@@ -20,14 +20,14 @@ public class QualitySoft {
 	 	System.out.println(onePerson.getFirstName() + onePerson.getLastName() + 
 	 					   onePerson.getAddress() + onePerson.getEmail() + 
 	 					   onePerson.getPhoneNumber() + onePerson.getNotes());
-	 	onePerson.compareTo(null);
+	 	System.out.println(onePerson.compareTo(null));
 	 	System.out.println(onePerson.toString());
 	 		
 		ContactList listOne;
 		listOne = new ContactList();
 		listOne.setNewContact();
 		listOne.sortContacts();
-		listOne.searchContacts();
+		System.out.println(listOne.searchContacts());
 		System.out.println(listOne.toString());
 		
 		scanner.close();
