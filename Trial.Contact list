@@ -1,0 +1,59 @@
+/** An object of this class creates an array of objects of the Person
+ * class. It can store and manipulate the way those Person objects are arranged, 
+ * as well as the values inside, and prints them to the console when called. - Edited by EN
+ * @author micaelakowalczyk
+ */
+package contact_list;
+import java.util.Arrays;
+public class ContactList{
+
+	private final int ARRAY_SIZE = 5;
+	private Person[] contactList = new Person[ARRAY_SIZE];
+	/**
+	 * MK constructor.
+	 */
+	public ContactList() {
+		for(int i = 0; i< ARRAY_SIZE; i++){
+			contactList[i] = new Person();
+		}
+	}
+	/**
+	 * MK, EN
+	 * method adds a new contact into the array by taking the user input from 
+	 * the public methods provided in Person.java 
+	 */
+	public void setNewContact(String firstName,String lastName,String address,String email,
+			String phoneNumber,String notes) {
+		int i = 0;
+		if(i<ARRAY_SIZE ){
+			contactList[i].setFirstName(firstName);
+			contactList[i].setLastName(lastName);
+			contactList[i].setAddress(address);
+			contactList[i].setEmail(email);
+			contactList[i].setPhoneNumber(phoneNumber);
+			contactList[i].setNotes(notes);
+			}
+		i++;
+	}
+	/**
+	 * MK, EN
+	 * method searches for & retrieves a contacts info by lastName
+	 * returns the toString methods of each Person object that matches
+	 */
+	public String searchContacts(){
+		return null; //will return a string in the future
+	}
+	/**
+	 * MK method sorts contact's info by lastName
+	 */
+	public void sortContacts() { // may use Arrays.sort
+	}
+	/**
+	 * MK, BK
+	 * toString method calls the Arrays.toString method 
+	 * which will return ALL contacts
+	 */
+	 public String toString(){
+		return Arrays.toString(contactList);
+	}
+}
