@@ -1,0 +1,116 @@
+/**
+ * This is a Skeleton of the Main Class that tests the Class Skeletons of
+ * Class ContactList and Class Person.
+ * @author micaelakowalczyk
+ * Edited by BK.
+ */
+package contact_list;
+import java.util.*;
+public class QualitySoft {
+	public static void main(String[] args) {
+		Scanner scanner;
+		scanner = new Scanner(System.in);
+		Person onePerson;
+		onePerson = new Person();
+		
+		onePerson.setFirstName(null);
+		onePerson.setLastName(null); 
+		onePerson.setAddress(null);
+		onePerson.setAddressLineTwo(null);
+		onePerson.setCity(null);
+		onePerson.setZipCode(null);
+		onePerson.setState(null);
+		onePerson.setCountry(null);
+		onePerson.setEmail(null);
+		onePerson.setPhoneNumber(null);
+	 	onePerson.setNotes(null);
+	 	
+	 	System.out.println(onePerson.getFirstName() + onePerson.getLastName() + onePerson.getAddress() 
+	 					 	+ onePerson.getAddressLineTwo() + onePerson.getCity() + onePerson.getZipCode() 
+	 					 	+ onePerson.getCity() + onePerson.getState() + onePerson.getCountry() 
+	 					    + onePerson.getEmail() +  onePerson.getPhoneNumber() + onePerson.getNotes()); 
+	 	//getters for use case 3 --> call when necesarry
+	 	
+	    System.out.println(onePerson.compareTo(null)); //number value
+	 	System.out.println(onePerson.toString());
+	 		
+		ContactList listOne;
+		listOne = new ContactList();
+		listOne.setNewContact(null, null, null, null, null, null);//add 1 contact to list
+		listOne.sortContacts();
+		System.out.println(listOne.searchContacts());
+		System.out.println(listOne.toString()); //whole array print
+		
+		scanner.close();
+		
+		System.out.println("The Class Skeleton has compiled successfully!");	
+	}
+}
+/*RUN
+nullnullnullnullnullnullnullnullnullnullnullnull
+0
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+[null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null, null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null, null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null, null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null, null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null]
+The Class Skeleton has compiled successfully!
+*/
