@@ -1,0 +1,185 @@
+/**
+ * Class Person contains variables and methods required
+ * for creating and retrieving new contacts.
+ * One object of class Person represents a person's contact information 
+ * including the first name, second name, street address, email address, and notes.
+ * @author micaelakowalczyk
+ * Edited by BK
+ */
+package contact_list;
+public class Person implements Comparable<Person> { 
+
+	private String firstName;
+	private String lastName;
+	private String streetAddress; 	
+	private String streetAddressLineTwo;
+	private String city;
+	private String zipCode;
+	private String state;
+	private String country;
+	private String email;
+	private String phoneNumber;
+	private String notes;
+	
+	/**MK
+	 * Constructor.
+	 */
+	public Person(){//the default person object --> what would that be?????		
+	}
+	/**MK
+	 * Sets first name to a person, returns void, parameter is String variable.
+	 */
+	public void setFirstName(String newFirstName){
+		firstName = newFirstName;
+	}
+	/**MK
+	 * Sets last name to a person, returns void, parameter is String variable.
+	 */
+	public void setLastName(String newLastName){	
+		lastName = newLastName;
+	}
+	/**MK
+	 * Sets address, returns void, parameter is String variable.
+	 */
+	public void setAddress(String newStreetAddress){
+		streetAddress = newStreetAddress;
+	}
+	/**MK
+	 * Sets the second address line, parameter is a String variable
+	 */
+	public void setAddressLineTwo(String newStreetAddressLineTwo){
+		streetAddressLineTwo = newStreetAddressLineTwo;
+	}	
+	/**MK
+	 * Sets the contact's city name, parameter is a String variable
+	 */
+	public void setCity(String newCity){
+		city = newCity;
+	}
+	/**MK
+	 * Sets the contact's zipcode, parameter is a String variable
+	 */
+	public void setZipCode(String newZipCode){
+		zipCode = newZipCode;
+	}
+	/**MK
+	 * Sets the contact's state, parameter is a String variable
+	 */
+	public void setState(String newState){
+		state = newState;
+	}
+	/**MK
+	 * Sets the contact's country, parameter is a String variable
+	 */
+	public void setCountry(String newCountry){
+		country = newCountry;
+	}
+	/**MK
+	 * Sets the email, returns void, parameter is String variable.
+	 */
+	public void setEmail(String newEmail){	
+		email = newEmail;
+	}	
+	/**MK
+	 * Sets the phone number, returns void, parameter is String variable.
+	 */
+	public void setPhoneNumber(String newPhoneNumber){	
+		phoneNumber = newPhoneNumber;
+	}		
+	/**MK
+	 * Sets notes, returns void, parameter is String variable.
+	 */
+	public void setNotes(String newNotes){	
+		notes = newNotes;
+	}
+	/**MK
+	 * Gets first name, returns String, and has no parameter.
+	 */
+	public String getFirstName(){
+		
+		return firstName;
+	}	
+	/**MK
+	 * Gets last name, returns String, and has no parameter.
+	 */
+	public String getLastName(){
+		return lastName;
+	}	
+	/**MK
+	 * Gets address, returns String, and has no parameter.
+	 */
+	public String getAddress(){		
+		return streetAddress;		
+	}
+	/**MK
+	 * Gets address line two, returns String, and has no parameter.
+	 */
+	public String getAddressLineTwo(){		
+		return streetAddressLineTwo;		
+	}
+	/**MK
+	 * Gets city, returns String, and has no parameter.
+	 */
+	public String getCity(){		
+		return city;		
+	}
+	/**MK
+	 * Gets zip code, returns String, and has no parameter.
+	 */
+	public String getZipCode(){		
+		return zipCode;		
+	}
+	/**MK
+	 * Gets state, returns String, and has no parameter.
+	 */
+	public String getState(){		
+		return state;		
+	}
+	/**MK
+	 * Gets country, returns String, and has no parameter.
+	 */
+	public String getCountry(){		
+		return country;		
+	}
+	/**MK
+	 * Gets email, returns String, and has no parameter.
+	 */
+	public String getEmail(){
+		return email;
+	}
+	/**MK
+	 * Gets phone number, returns String, and has no parameter.
+	 */
+	public String getPhoneNumber(){
+		return phoneNumber;
+	}	
+	/**MK
+	 * Gets notes, returns String, no parameter.
+	 */
+	public String getNotes(){	
+		return notes;
+	}	
+	
+	/**MK
+	 * Method part of Comparable interface, parameter is the object 'o' that the info 
+	 * from class Person will be compared to, returns a value of -1, 0, or 1 depending if the expression 
+	 * has a negative, positive, or equal value from the comparison.
+	 * will return a positive value (0) if 
+	 * will return an equal value (0) if
+	 * will return a negative value (-1) if
+	 */
+	@Override
+	public int compareTo(Person o){	
+		
+		return 0;		//from API
+	}
+	
+	/**MK
+	 * The toString method, there are no parameters, returns all information regarding ONE contact.
+	 */
+	public String toString(){
+		return firstName + "\n" + lastName + "\n" + streetAddress + "\n" + streetAddressLineTwo 
+				+ "\n" + city + "\n" + zipCode + "\n" + state + "\n" + country + "\n" + email
+				+ "\n" + phoneNumber + "\n" + notes;
+	}
+}
